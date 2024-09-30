@@ -24,35 +24,26 @@
 #### Comando para iniciar o app
 - CMD ["node", "index.js"]
 
-## 3. O que cada comando faz
-
-- `FROM`: Diz qual imagem base usar. É como escolher o sistema operacional.
-- `WORKDIR`: Define a pasta onde vamos trabalhar dentro do container.
-- `COPY`: Copia arquivos do seu computador para o container.
-- `RUN`: Executa um comando durante a construção da imagem.
-- `EXPOSE`: Diz qual porta o app vai usar.
-- `CMD`: Define o comando que será executado quando o container iniciar.
-
-## 4. Construindo a Imagem
+## 3. Construindo a Imagem
 
 Abra o terminal na pasta do seu Dockerfile e digite:
 
-docker build -t nuvem .
+docker build -t comp-nuvem .
 
-Isso cria uma imagem chamada "nuvem".
+Isso cria uma imagem chamada "comp-nuvem".
 
-## 5. Executando o Container
+## 4. Executando o Container
 
 Para iniciar seu app, digite:
 
-docker run -p 8080:8080 nuvem
+docker run -p 8080:8080 comp-nuvem
 
 Isso inicia o container e conecta a porta 8080 do container à porta 8080 do seu computador.
 
-## 6. Verificando
+## 5. Verificando
 
 Abra seu navegador e vá para `http://localhost:8080`. Se tudo deu certo, você verá seu app rodando!
 
 Pronto! Agora você tem seu app rodando em um container Docker.
 
-![Imagem dele rodando](image.png)
+![Imagem dele rodando](imagem.png)
